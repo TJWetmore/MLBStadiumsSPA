@@ -1,8 +1,8 @@
 import {useContext} from "react";
 import {Select, Flex} from "@chakra-ui/react";
-import {nlEast, nlCentral, nlWest, alEast, alWest, alCentral} from './mlbteams'
-import {TeamContext} from '../../../teamContext'
-import {getNewTeam} from '../../utls/getNewTeam.d'
+import {nlEast, nlCentral, nlWest, alEast, alWest, alCentral} from '../utls/mlbteams'
+import {TeamContext} from '../../teamContext'
+import {getNewTeam} from '../utls/getNewTeam.d'
 
 
 export const NewTeamSelector = () => {

@@ -3,7 +3,7 @@ import {StadiumDetails} from './StadiumDetails'
 import { SocialDetails } from "./SocialDetails";
 import {Heading} from "@chakra-ui/react";
 import {TeamContext} from '../../teamContext'
-import {NewTeamSelector} from '../navagation/NewTeamDropDown/NewTeamSelector'
+import {NewTeamSelector} from '../navagation/NewTeamSelector'
 
 
 

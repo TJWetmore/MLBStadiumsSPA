@@ -1,5 +1,4 @@
 import {createContext} from 'react';
-import {getNewTeam} from './components'
 
 export const TeamContext = createContext([{
   idAPIfootball: "31",
