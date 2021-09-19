@@ -1,46 +1,20 @@
-# Getting Started with Create React App
+# TJ's MLB Stadium guidebook
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hey thanks for taking the time to read the read me and review my work. 
 
-## Available Scripts
+I wanted to have fun with this so instead of making a single page for my favorite team (Go Giants!) I went ahead and made a SPA for MLB stadiums. 
 
-In the project directory, you can run:
+My thinking was I wanted to demonstrate my abilities in React, that I can make resuable components, that I can intermediate hooks, etc. Only one page for a team didn't seem as fun. Also your API is a little out of date. 
 
-### `npm start`
+I wanted to give : 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*I was very very close to using Redux*
+The prompt was to create a page for just my favorite team, but it also said have fun. So I made a page that lets the user select from a list of teams, because I thought that would be more fun rather than styling and nit-picking padding, margin, image sizes, etc.
+Because I was having the user select from a list of teams, I grew concerned about prop-drilling. Pretty much all the components on the page are touching one central data object - the result from API call. So I decided to use the hook useContext.
+---!!!! There are pitfalls with useContext. It can really impact readability. React is super explict and direct (where did the prop come from?) so useContext abstracts that out and honestly kind of hurts the overall utility of React. ---
+The fact of the matter is I should have used redux for the global state management. But if I were to go back and refactor I would add in react-redux.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+*I am not a typescript wiz*
+But i would like to get better, that's why I used it here. Even if time constraints made it a less than ideal idea. But if this were to scale, having the bones of TS are a good idea. That's why I used it. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
