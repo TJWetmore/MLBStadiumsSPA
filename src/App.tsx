@@ -1,31 +1,29 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
-import {NavagationBar, getNewTeam, TeamDetails} from './components';
-import {TeamContext} from './teamContext'
+import { NavagationBar, getNewTeam, TeamDetails } from './components';
+import { TeamContext } from './teamContext';
 
 function App() {
+  const [displayedTeam, setDisplayedTeam] = useState<any>();
 
-  const [displayedTeam, setDisplayedTeam] = useState<any>()
+  useEffect(() => {
+    const setInitialState = async () => {
+      setDisplayedTeam(await getNewTeam('san_francisco_giants'));
+    };
+    setInitialState();
+  }, []);
 
-  useEffect(()=> {
-    const setInitialState = async () =>{
-      setDisplayedTeam(await getNewTeam('san_francisco_giants'))
-    }
-    setInitialState()
-  }, [])
-
-  console.log(displayedTeam)
-  
-    return (
-      <>
-        {displayedTeam && 
+  return (
+    <>
+      {displayedTeam
+          && (
           <TeamContext.Provider value={[displayedTeam, setDisplayedTeam]}>
-          <NavagationBar />
-          <TeamDetails />
-        </TeamContext.Provider>
-        }
-      </>
-    );
+            <NavagationBar />
+            <TeamDetails />
+          </TeamContext.Provider>
+          )}
+    </>
+  );
 }
 
 export default App;
