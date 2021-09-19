@@ -1,6 +1,6 @@
 # TJ's MLB Stadium guidebook
 
-Hey thanks for taking the time to read the read me and review my work. 
+Hey thanks for taking the time to read the read me and review my work.You should be able to clone this repo, run 'npm install', and then 'npm run start' to see it locally. The dependeinces that are not standard with create-react-app typscript template are @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4, which have weekly downloads in the 140k - 4million range.
 
 I wanted to have fun with this so instead of making a single page for my favorite team (Go Giants!) I went ahead and made a SPA for MLB stadiums. 
 
@@ -25,6 +25,5 @@ Even if time constraints made it a less than ideal idea. But if this were to sca
 The speed of development and the ease in reading make it a good choice in my opinion. There's also some great built in features, and I took the time to make everything mobile, tablet, and desktop compatible. 
 
 
-# Setup
-You should be able to clone this repo, run 'npm install', and then 'npm run start' to see it locally. 
-The dependeinces that are not standard with create-react-app typscript template are @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4, which have weekly downloads in the 140k - 4million range.
+- 
+
