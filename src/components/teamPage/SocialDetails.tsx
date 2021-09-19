@@ -1,6 +1,6 @@
 import {useContext} from "react";
 import {HStack, Center, IconButton} from "@chakra-ui/react";
-import {FaGlobeAmericas, FaTwitter, FaFacebook} from 'react-icons/fa'
+import {FaGlobeAmericas, FaTwitter, FaFacebook, FaInstagram} from 'react-icons/fa'
 import {TeamContext} from '../../teamContext'
 
 
@@ -20,6 +20,9 @@ export const SocialDetails = () => {
         }
         {displayedTeam.strFacebook &&
         <IconButton aria-label="Facebook" color="lightBlue" onClick={()=>window.open(`https://${displayedTeam.strFacebook}`, '_blank ')} icon={<FaFacebook />} />
+        }
+        {displayedTeam.strInstagram &&
+        <IconButton aria-label="Facebook" color="lightBlue" onClick={()=>window.open(`https://${displayedTeam.strInstagram}`, '_blank ')} icon={<FaInstagram />} />
         }
       </HStack>
     </Center>
