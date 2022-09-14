@@ -19,7 +19,7 @@ The fact of the matter is I should have used redux for the global state manageme
 
 
 - I started this in Typescript
-Even if time constraints made it a less than ideal idea. But if this were to scale, having the bones of TS are a good idea. That's why I used it. 
+ if this were to scale, having the bones of TS are a good idea. That's why I used it. 
 
 - I used Chakra UI as my CSS component library 
 The speed of development and the ease in reading make it a good choice in my opinion. There's also some great built in features, and I took the time to make everything mobile, tablet, and desktop compatible. 
